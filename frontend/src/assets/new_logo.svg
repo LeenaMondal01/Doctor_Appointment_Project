@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="700" height="500" viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Background -->
+  <rect width="700" height="500" fill="#FFFFFF"/>
+
+  <!-- Medical Cross -->
+  <rect x="150" y="125" width="100" height="250" rx="15" fill="#0077B6"/>
+  <rect x="75" y="200" width="250" height="100" rx="15" fill="#0077B6"/>
+  
+  <!-- Heart Symbol -->
+  <path d="M200 370 C160 320, 100 290, 100 230 C100 180, 140 150, 175 180 C200 150, 250 180, 250 230 C250 290, 200 320, 200 370 Z" fill="#4CAF50"/>
+
+  <!-- Text (Placed Beside the Logo) -->
+  <text x="350" y="250" font-family="Poppins, sans-serif" font-size="40" font-weight="bold" fill="#0077B6" text-anchor="start">Care and Cure</text>
+  <text x="350" y="300" font-family="Poppins, sans-serif" font-size="20" fill="#4CAF50" text-anchor="start">Medical Center</text>
+</svg>
