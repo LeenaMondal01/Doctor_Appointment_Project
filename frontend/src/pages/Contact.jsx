@@ -12,7 +12,7 @@ const Contact = () => {
         <img className='w-full md:max-w-[360px]' src={assets.contact_image} alt="" />
         <div className='flex flex-col justify-center items-start gap-6'>
           <p className='font-semibold text-lg text-gray-600'>OUR OFFICE</p>
-          <p className='text-gray-500'>📌147A, APC Road, Rajabazar <br />📍 Kolkata – 700009, West Bengal</p>
+          <p className='text-gray-500'>📌147A, APC Road, Rajabazar <br />📍 Kolkata - 700009, West Bengal</p>
           <p className='text-gray-500'>📞 Phone: +91 98765 43210 <br /> 📧 Email: contact@carecurekolkata.com</p>
           <p className='font-semibold text-lg text-gray-600'>Careers at Care and Cure Medical Center</p>
           <p className='text-gray-500'>Learn more about our teams and job openings.</p>

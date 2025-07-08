@@ -1,5 +1,5 @@
 import express from 'express';
-import { bookAppointment, cancelAppointment, getUserProfile, listAppointment, loginUser, registerUser, updateUserProfile } from '../controllers/userController.js';
+import { bookAppointment, cancelAppointment, getUserProfile, listAppointment, loginUser, paymentRazorpay, registerUser, updateUserProfile, verifyRazorpay } from '../controllers/userController.js';
 import authUser from '../middlewares/authUser.js';
 import upload from '../middlewares/multer.js';
 
@@ -13,6 +13,8 @@ userRouter.post('/update-profile',upload.single('image'),authUser,updateUserProf
 userRouter.post('/book-appointment',authUser,bookAppointment);
 userRouter.get('/appointments',authUser,listAppointment);
 userRouter.post('/cancel-appointment',authUser,cancelAppointment);
+userRouter.post('/payment-razorpay',authUser,paymentRazorpay);
+userRouter.post('/verifyRazorpay',authUser,verifyRazorpay);
 
 
 export default userRouter;

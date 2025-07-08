@@ -58,6 +58,8 @@ import React, { useRef } from 'react';
 import { assets } from '../assets/assets';
 import baba from '../assets/reviews/baba.jpeg';
 import maa from '../assets/reviews/maa.jpeg';
+import soma from '../assets/reviews/soma.jpeg';
+import bimal from '../assets/reviews/bimal.jpeg';
 
 const About = () => {
   const carouselRef = useRef(null);
@@ -135,11 +137,11 @@ const About = () => {
               review: "I consulted the gynecologist here for regular checkups and found the experience very professional and reassuring. The doctor was attentive and extremely kind. The center itself is clean, well-organized, and welcoming."
             },
             {
-              name: "Soma Biswas", city: "Garia", img: "https://randomuser.me/api/portraits/men/12.jpg",
+              name: "Soma Biswas", city: "Garia", img: soma,
               review: "The general physician was quick to diagnose and start treatment for my recurring fever. I appreciated the clarity in communication. Care & Cure's online appointment system is super smooth and efficient."
             },
             {
-              name: "Bimal Tripathi", city: "Baruipur", img: "https://randomuser.me/api/portraits/women/12.jpg",
+              name: "Bimal Tripathi", city: "Baruipur", img: bimal,
               review: "Visited the dermatologist for my skin allergies. The treatment worked like magic! The doctor was knowledgeable and very approachable. Care & Cure has truly modern facilities and helpful staff."
             },
             {
