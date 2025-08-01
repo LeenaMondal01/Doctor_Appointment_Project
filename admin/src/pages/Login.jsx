@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react'
-import {assets} from '../assets/assets'
 import { AdminContext } from '../context/AdminContext';
 import axios from 'axios';
 import { toast } from 'react-toastify';
@@ -9,7 +8,6 @@ const Login = () => {
   const [state,setState] = useState('Admin');
   const [email,setEmail] = useState('');
   const [password,setPassword] = useState('');
-  const [confirmPassword,setConfirmPassword] = useState('');
 
   const {setAToken,backendUrl} = useContext(AdminContext);
   const {setDToken} = useContext(DoctorContext);
@@ -60,11 +58,6 @@ const Login = () => {
           <p>Password</p>
           <input onChange={(e)=>setPassword(e.target.value)} value={password} className='border border-[#DADADA] rounded w-full p-2 mt-1' type="password" required />
         </div>
-
-        {/* <div className='w-full'>
-          <p>Confirm Password</p>
-          <input onChange={(e)=>setConfirmPassword(e.target.value)} value={confirmPassword} className='border border-[#DADADA] rounded w-full p-2 mt-1' type="password" required />
-        </div> */}
 
         <button className='bg-primary text-white w-full py-2 rounded-md text-base'>Login</button>
 
